@@ -1,0 +1,17 @@
+﻿main.obj : error LNK2019: symbole externe non résolu __imp_glutInitWindowSize référencé dans la fonction "void __cdecl createWindow(int *)" (?createWindow@@YAXPEAH@Z)
+main.obj : error LNK2019: symbole externe non résolu __imp_glutInitDisplayMode référencé dans la fonction "void __cdecl initGlut(int *,char * * const)" (?initGlut@@YAXPEAHQEAPEAD@Z)
+main.obj : error LNK2019: symbole externe non résolu __imp_glutMainLoop référencé dans la fonction main
+main.obj : error LNK2019: symbole externe non résolu __imp_glutReshapeWindow référencé dans la fonction "void __cdecl touchesSpecialesClavier(int,int,int)" (?touchesSpecialesClavier@@YAXHHH@Z)
+main.obj : error LNK2019: symbole externe non résolu __imp_glutPositionWindow référencé dans la fonction "void __cdecl touchesSpecialesClavier(int,int,int)" (?touchesSpecialesClavier@@YAXHHH@Z)
+main.obj : error LNK2019: symbole externe non résolu __imp_glutPostRedisplay référencé dans la fonction "void __cdecl touchesClavier(unsigned char,int,int)" (?touchesClavier@@YAXEHH@Z)
+main.obj : error LNK2019: symbole externe non résolu __imp_glutKeyboardFunc référencé dans la fonction "void __cdecl createWindow(int *)" (?createWindow@@YAXPEAH@Z)
+main.obj : error LNK2019: symbole externe non résolu __imp_glutSpecialFunc référencé dans la fonction "void __cdecl createWindow(int *)" (?createWindow@@YAXPEAH@Z)
+main.obj : error LNK2019: symbole externe non résolu __imp_glutDisplayFunc référencé dans la fonction "void __cdecl createWindow(int *)" (?createWindow@@YAXPEAH@Z)
+main.obj : error LNK2019: symbole externe non résolu __imp_glutGet référencé dans la fonction "void __cdecl touchesSpecialesClavier(int,int,int)" (?touchesSpecialesClavier@@YAXHHH@Z)
+main.obj : error LNK2019: symbole externe non résolu __imp___glutInitWithExit référencé dans la fonction glutInit_ATEXIT_HACK
+main.obj : error LNK2019: symbole externe non résolu __imp___glutCreateWindowWithExit référencé dans la fonction glutCreateWindow_ATEXIT_HACK
+main.obj : error LNK2019: symbole externe non résolu __imp_glutLeaveMainLoop référencé dans la fonction "void __cdecl touchesClavier(unsigned char,int,int)" (?touchesClavier@@YAXEHH@Z)
+Dependencies\freeglut\freeglut.lib : warning LNK4272: type d'ordinateur bibliothèque 'x86' en conflit avec le type d'ordinateur cible 'x64'
+Dependencies\glew\glew32.lib : warning LNK4272: type d'ordinateur bibliothèque 'x86' en conflit avec le type d'ordinateur cible 'x64'
+Dependencies\freeglut\freeglutd.lib : warning LNK4272: type d'ordinateur bibliothèque 'x86' en conflit avec le type d'ordinateur cible 'x64'
+D:\InfographieLab1\x64\Debug\InfographieLab1.exe : fatal error LNK1120: 13 externes non résolus
