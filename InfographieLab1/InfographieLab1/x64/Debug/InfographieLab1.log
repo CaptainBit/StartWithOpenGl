@@ -1,4 +1,20 @@
-﻿main.obj : error LNK2019: symbole externe non résolu __imp_glutInitWindowSize référencé dans la fonction "void __cdecl createWindow(int *)" (?createWindow@@YAXPEAH@Z)
+﻿  main.cpp
+c:\users\usager\documents\visual studio 2017\projects\startwithopengl-master\infographielab1\infographielab1\main.cpp(93): warning C4305: 'argument' : troncation de 'double' à 'GLclampf'
+c:\users\usager\documents\visual studio 2017\projects\startwithopengl-master\infographielab1\infographielab1\main.cpp(113): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
+c:\users\usager\documents\visual studio 2017\projects\startwithopengl-master\infographielab1\infographielab1\main.cpp(114): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
+c:\users\usager\documents\visual studio 2017\projects\startwithopengl-master\infographielab1\infographielab1\main.cpp(127): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+c:\users\usager\documents\visual studio 2017\projects\startwithopengl-master\infographielab1\infographielab1\main.cpp(131): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+c:\users\usager\documents\visual studio 2017\projects\startwithopengl-master\infographielab1\infographielab1\main.cpp(139): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+c:\users\usager\documents\visual studio 2017\projects\startwithopengl-master\infographielab1\infographielab1\main.cpp(143): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+c:\users\usager\documents\visual studio 2017\projects\startwithopengl-master\infographielab1\infographielab1\main.cpp(150): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+c:\users\usager\documents\visual studio 2017\projects\startwithopengl-master\infographielab1\infographielab1\main.cpp(152): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+c:\users\usager\documents\visual studio 2017\projects\startwithopengl-master\infographielab1\infographielab1\main.cpp(154): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+  ShaderLoader.cpp
+c:\users\usager\documents\visual studio 2017\projects\startwithopengl-master\infographielab1\infographielab1\shaderloader.cpp(39): warning C4267: 'initialisation' : conversion de 'size_t' en 'int', perte possible de données
+c:\users\usager\documents\visual studio 2017\projects\startwithopengl-master\infographielab1\infographielab1\shaderloader.cpp(39): warning C4267: 'initialisation' : conversion de 'size_t' en 'const int', perte possible de données
+  Génération de code en cours...
+main.obj : error LNK2019: symbole externe non résolu __imp_glewInit référencé dans la fonction main
+main.obj : error LNK2019: symbole externe non résolu __imp_glutInitWindowSize référencé dans la fonction "void __cdecl createWindow(int *)" (?createWindow@@YAXPEAH@Z)
 main.obj : error LNK2019: symbole externe non résolu __imp_glutInitDisplayMode référencé dans la fonction "void __cdecl initGlut(int *,char * * const)" (?initGlut@@YAXPEAHQEAPEAD@Z)
 main.obj : error LNK2019: symbole externe non résolu __imp_glutMainLoop référencé dans la fonction main
 main.obj : error LNK2019: symbole externe non résolu __imp_glutReshapeWindow référencé dans la fonction "void __cdecl touchesSpecialesClavier(int,int,int)" (?touchesSpecialesClavier@@YAXHHH@Z)
@@ -11,7 +27,18 @@ main.obj : error LNK2019: symbole externe non résolu __imp_glutGet référencé
 main.obj : error LNK2019: symbole externe non résolu __imp___glutInitWithExit référencé dans la fonction glutInit_ATEXIT_HACK
 main.obj : error LNK2019: symbole externe non résolu __imp___glutCreateWindowWithExit référencé dans la fonction glutCreateWindow_ATEXIT_HACK
 main.obj : error LNK2019: symbole externe non résolu __imp_glutLeaveMainLoop référencé dans la fonction "void __cdecl touchesClavier(unsigned char,int,int)" (?touchesClavier@@YAXEHH@Z)
+main.obj : error LNK2001: symbole externe non résolu __imp___glewUseProgram
+ShaderLoader.obj : error LNK2001: symbole externe non résolu __imp___glewAttachShader
+ShaderLoader.obj : error LNK2001: symbole externe non résolu __imp___glewCompileShader
+ShaderLoader.obj : error LNK2001: symbole externe non résolu __imp___glewCreateProgram
+ShaderLoader.obj : error LNK2001: symbole externe non résolu __imp___glewCreateShader
+ShaderLoader.obj : error LNK2001: symbole externe non résolu __imp___glewGetProgramInfoLog
+ShaderLoader.obj : error LNK2001: symbole externe non résolu __imp___glewGetProgramiv
+ShaderLoader.obj : error LNK2001: symbole externe non résolu __imp___glewGetShaderInfoLog
+ShaderLoader.obj : error LNK2001: symbole externe non résolu __imp___glewGetShaderiv
+ShaderLoader.obj : error LNK2001: symbole externe non résolu __imp___glewLinkProgram
+ShaderLoader.obj : error LNK2001: symbole externe non résolu __imp___glewShaderSource
 Dependencies\freeglut\freeglut.lib : warning LNK4272: type d'ordinateur bibliothèque 'x86' en conflit avec le type d'ordinateur cible 'x64'
 Dependencies\glew\glew32.lib : warning LNK4272: type d'ordinateur bibliothèque 'x86' en conflit avec le type d'ordinateur cible 'x64'
 Dependencies\freeglut\freeglutd.lib : warning LNK4272: type d'ordinateur bibliothèque 'x86' en conflit avec le type d'ordinateur cible 'x64'
-D:\InfographieLab1\x64\Debug\InfographieLab1.exe : fatal error LNK1120: 13 externes non résolus
+C:\Users\usager\Documents\Visual Studio 2017\Projects\StartWithOpenGl-master\InfographieLab1\x64\Debug\InfographieLab1.exe : fatal error LNK1120: 25 externes non résolus

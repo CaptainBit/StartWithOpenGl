@@ -25,6 +25,8 @@ void refreshGraphics();
 void touchesClavier(unsigned char touche, int x, int y);
 void touchesSpecialesClavier(int touche, int x, int y);
 void randomColor(float &r, float &v, float &b);
+void createDrawing();
+
 //Fonction principale d'exécution
 int main(int argc, char **argv)
 {
@@ -35,8 +37,8 @@ int main(int argc, char **argv)
 	ShaderLoader shaderLoader;
 	GLuint program = shaderLoader.CreateProgram((char*)"MyFirstShader.glsl", (char*)"FragmentShader.glsl");
 	glUseProgram(program);
+	createDrawing();
 	glutMainLoop();
-	
 	return 0;
 
 }
@@ -52,17 +54,20 @@ void initGlut(int * argc, char * argv[]) {
 void createWindow(int * win) {
 	glutInitWindowSize(WINDOW_WIDTH, WINDOW_HEIGHT);
 	*win = glutCreateWindow("Laboratoire 1");
-	glClearColor(1.0, 0.0, 0.0, 0);
+	glClearColor(0.0, 0.0, 0.0, 0);
 	glutDisplayFunc(refreshGraphics);
 	glutKeyboardFunc(touchesClavier);
 	glutSpecialFunc(touchesSpecialesClavier);
+	
 }
 
 //Rafraichissement de la page 
 void refreshGraphics(void) {
 	
 	glClear(GL_COLOR_BUFFER_BIT);
-	glDrawArrays(GL_TRIANGLES, 0, 3);
+	
+	glDrawArrays(GL_LINE_LOOP,0,5);
+	
 	glFlush();
 }
 
@@ -155,3 +160,23 @@ void randomColor(float &r, float &v, float &b) {
 	b = b / 255;
 }
 
+void createDrawing()
+{
+	//For the vertices
+	GLfloat sommets[20] = { -0.5f, 0.0f, 0.0f,1.0f,   0.5f, 0.0f, 0.0f,1.0f,   -0.25f, -1.0f, 0.0f,1.0f,   0.0f, 0.5f, 0.0f, 1.0f,   0.25f, -1.0f, 0.0f,1.0f };
+	GLuint bufferV;
+	glGenBuffers(1, &bufferV);
+	glEnableVertexAttribArray(0);
+	glBindBuffer(GL_ARRAY_BUFFER,bufferV);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(sommets), &sommets, GL_STREAM_DRAW);
+	glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, 0, 0);
+
+	//For the color
+	GLfloat colors[20] = { 0.5f, 0.0f, 0.0f,1.0f,   0.5f, 0.0f, 0.0f,1.0f,   0.0f, 1.0f, 0.0f,1.0f,   0.0f, 0.0f, 1.0f, 1.0f,   0.0f, 1.0f, 0.3f,1.0f };
+	GLuint bufferC;
+	glGenBuffers(1, &bufferC);
+	glEnableVertexAttribArray(1);
+	glBindBuffer(GL_ARRAY_BUFFER, bufferC);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(colors), &colors, GL_STREAM_DRAW);
+	glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, 0, 0);
+}

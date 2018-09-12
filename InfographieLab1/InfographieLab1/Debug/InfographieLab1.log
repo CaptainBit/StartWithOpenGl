@@ -1,12 +1,12 @@
 ﻿  main.cpp
-d:\infographielab1\infographielab1\main.cpp(93): warning C4305: 'argument' : troncation de 'double' à 'GLclampf'
-d:\infographielab1\infographielab1\main.cpp(113): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
-d:\infographielab1\infographielab1\main.cpp(114): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
-d:\infographielab1\infographielab1\main.cpp(127): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
-d:\infographielab1\infographielab1\main.cpp(131): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
-d:\infographielab1\infographielab1\main.cpp(139): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
-d:\infographielab1\infographielab1\main.cpp(143): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
-d:\infographielab1\infographielab1\main.cpp(150): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
-d:\infographielab1\infographielab1\main.cpp(152): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
-d:\infographielab1\infographielab1\main.cpp(154): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
-  InfographieLab1.vcxproj -> D:\InfographieLab1\Debug\InfographieLab1.exe
+c:\users\usager\documents\visual studio 2017\projects\startwithopengl-master\infographielab1\infographielab1\main.cpp(98): warning C4305: 'argument' : troncation de 'double' à 'GLclampf'
+c:\users\usager\documents\visual studio 2017\projects\startwithopengl-master\infographielab1\infographielab1\main.cpp(118): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
+c:\users\usager\documents\visual studio 2017\projects\startwithopengl-master\infographielab1\infographielab1\main.cpp(119): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
+c:\users\usager\documents\visual studio 2017\projects\startwithopengl-master\infographielab1\infographielab1\main.cpp(132): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+c:\users\usager\documents\visual studio 2017\projects\startwithopengl-master\infographielab1\infographielab1\main.cpp(136): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+c:\users\usager\documents\visual studio 2017\projects\startwithopengl-master\infographielab1\infographielab1\main.cpp(144): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+c:\users\usager\documents\visual studio 2017\projects\startwithopengl-master\infographielab1\infographielab1\main.cpp(148): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+c:\users\usager\documents\visual studio 2017\projects\startwithopengl-master\infographielab1\infographielab1\main.cpp(155): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+c:\users\usager\documents\visual studio 2017\projects\startwithopengl-master\infographielab1\infographielab1\main.cpp(157): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+c:\users\usager\documents\visual studio 2017\projects\startwithopengl-master\infographielab1\infographielab1\main.cpp(159): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+  InfographieLab1.vcxproj -> C:\Users\usager\Documents\Visual Studio 2017\Projects\StartWithOpenGl-master\InfographieLab1\Debug\InfographieLab1.exe
